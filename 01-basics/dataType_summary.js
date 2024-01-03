@@ -14,3 +14,22 @@ console.log("add text");
 }
 
 console.log(typeof heros);
+
+// stack primitive 
+
+let myReallName = "Manali123"
+let anotherName = myReallName
+anotherName = "kittu"
+console.log(myReallName);
+console.log(anotherName);
+
+let userOne = {
+    email: "mn@gmail.com",
+    upi: "WW232D"
+}
+
+let userTwo = userOne
+userTwo.email = "mn11@gmail.com"
+
+console.log(userTwo.email);
+console.log(userOne.email);
