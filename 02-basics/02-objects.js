@@ -43,7 +43,7 @@ console.log(JsUser.greeting2);
 const tinderUser = {}
 tinderUser.id = "123abc"
 tinderUser.name = "kittu"
-tinderUser.idLoggedIn = false
+tinderUser.isLoggedIn = false
 
 const regularUser = {
     email: "manali.c@gmail.com",
@@ -64,20 +64,46 @@ const obj3 = {5: "a", 6: "b"}
 const obj4 = Object.assign({}, obj1, obj2, obj3)
 console.log(obj4);
 
-// const users[
-//     {
+const users = [
+    {
+        id: 1,
+        email: "manali@gmail.com"
+    },
+    {
+        id: 2,
+        email: "manali@gmail.com"
+    },
+    {
+        id: 3,
+        email: "manali@gmail.com"
+    },
+    {
+        id: 4,
+        email: "manali@gmail.com"
 
-//     },
-//     {
+    }
+]
 
-//     },
-//     {
+users[1].email
+console.log(tinderUser);
 
-//     },
-//     {
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
 
-//     }
-// ]
+console.log(tinderUser.hasOwnProperty("isLoggedIn"))
 
-// users[1].email
-// console.log(tinderUser)
+const course = {
+    coursename: "english",
+    price: "999",
+    courseInstructor: "manali"
+}
+
+const {courseInstructor} = course
+console.log(courseInstructor)
+
+// const navbar = () => {
+
+// }
+// navbar(company = "M1")
+
