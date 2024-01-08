@@ -36,3 +36,56 @@ function returnSecondValue(getArray){
     return getArray[1]
 }
 console.log(returnSecondValue([100, 200, 300 ,400]));
+
+
+// scope {}
+
+
+// var c = 300
+let a = 20
+if ( true) {
+    let  a = 10
+    const b = 20
+console.log("INNER: ", a);
+
+}
+
+console.log(a)
+// console.log(b)
+// console.log(c)
+
+
+function one(){
+    const username = "kittu"
+
+    function two(){
+        const website = "youtube"
+        console.log(username);    
+    }
+    // console.log(website);
+
+    two()
+}
+ 
+// one()
+
+if (true) {
+    const username = "kittu"
+    if(username === "kittu"){
+        const website = "youtube"
+        console.log(username + website);
+    }
+    // console.log(website);
+}
+// console.log(username);
+
+console.log(addone(5))
+function addone (num){
+    return num + 1
+}
+
+
+const addTwo = function(num1){
+    return num1 + 2
+}
+addTwo(5)
